@@ -73,7 +73,7 @@ const SearchForm = ({ fetchCityData }) => {
               textShadow: '1px 1px 10px #FFCC33',
             }}
           >
-            Search Your Desires
+            Search
           </p>
         </div>
       </Col>
