@@ -88,3 +88,6 @@ Remember that this project is licensed under the MIT license, and by submitting 
 - Ensure that your code conforms to our existing code conventions and test coverage.
 - Include the relevant issue number, if applicable.
 - You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
+
+###Photo by <a href="https://unsplash.com/@jarvisphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Braden Jarvis</a> on <a href="/s/photos/city-skyline?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
