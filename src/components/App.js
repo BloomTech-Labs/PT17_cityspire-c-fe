@@ -30,21 +30,26 @@ const App = () => {
 
   return (
     <Security {...config} onAuthRequired={authHandler}>
+      <UserLanding />
       <Switch>
-        <Route path="/" component={UserLanding} />
+        {/* <Route path= "/" component={UserLanding} /> */}
         <Route path="/login" component={LoginPage} />
         <Route path="/implicit/callback" component={LoginCallback} />
 
         {/* any of the routes you need secured should be registered as SecureRoutes */}
-        {/* <SecureRoute
-          path="/"
+        <SecureRoute
+          path="/login"
           exact
           component={() => <HomePage LoadingComponent={LoadingComponent} />}
-        /> */}
+        />
 
-        <SecureRoute path="/profile/:id/dashboard" exact>
-          <UserDashboardPage id={id} />
-        </SecureRoute>
+        <SecureRoute
+          path="/profile/:id/dashboard"
+          exact
+          component={() => (
+            <UserDashboardPage id={id} LoadingComponent={LoadingComponent} />
+          )}
+        />
 
         <SecureRoute path="/:state/:city" exact>
           <CitySearchResultsPage city={city} state={state} />
