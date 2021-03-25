@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { mapboxConfig } from '../../utils/mapboxConfig';
 import ReactMapGL from 'react-map-gl';
-import mapboxgl from 'mapbox-gl';
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp';
 // eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+// mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
-const MapboxGLMap = ({ lat, long }) => {
+function MapboxGLMap({ lat, long }) {
   const [viewport, setViewport] = useState({
     latitude: lat,
     longitude: long,
@@ -26,6 +26,6 @@ const MapboxGLMap = ({ lat, long }) => {
       />
     </>
   );
-};
+}
 
 export default MapboxGLMap;

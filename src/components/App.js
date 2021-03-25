@@ -38,18 +38,14 @@ const App = () => {
 
         {/* any of the routes you need secured should be registered as SecureRoutes */}
         <SecureRoute
-          path="/login"
+          path="/"
           exact
           component={() => <HomePage LoadingComponent={LoadingComponent} />}
         />
 
-        <SecureRoute
-          path="/profile/:id/dashboard"
-          exact
-          component={() => (
-            <UserDashboardPage id={id} LoadingComponent={LoadingComponent} />
-          )}
-        />
+        <SecureRoute path="/profile/:id/dashboard" exact>
+          <UserDashboardPage id={id} />
+        </SecureRoute>
 
         <SecureRoute path="/:state/:city" exact>
           <CitySearchResultsPage city={city} state={state} />
