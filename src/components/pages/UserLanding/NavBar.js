@@ -47,18 +47,10 @@ const NavBar = () => {
                 className="nav-links"
                 onClick={() => setClick(false)}
               >
-                Map
+                About
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                to="/"
-                className="nav-links"
-                onClick={() => setClick(false)}
-              >
-                Saved Searches
-              </Link>
-            </li>
+
             <li>
               <Link
                 to="/login"
