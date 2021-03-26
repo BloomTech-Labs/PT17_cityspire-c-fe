@@ -13,6 +13,7 @@ import { LoadingComponent } from './common';
 import { CitySearchResultsPage } from './pages/CitySearchResults';
 import { UserDashboardPage } from './pages/UserDashboard';
 import { PinnedCityPage } from './pages/PinnedCity';
+import UserLanding from '../components/pages/UserLanding';
 
 const App = () => {
   // The reason to declare App this way is so that we can use any helper functions we'd need for business logic, in our case auth.
@@ -29,6 +30,7 @@ const App = () => {
 
   return (
     <Security {...config} onAuthRequired={authHandler}>
+      <UserLanding />
       <Switch>
         <Route path="/login" component={LoginPage} />
         <Route path="/implicit/callback" component={LoginCallback} />
