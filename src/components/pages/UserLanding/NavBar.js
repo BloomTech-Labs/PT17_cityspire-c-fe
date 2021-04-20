@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from './Button';
+import { ULButton } from './ULButton';
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 
 import './UserLanding.css';
@@ -61,7 +61,7 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn-outline">Sign In/Up</Button>}
+          {button && <ULButton buttonStyle="btn-outline">Sign In/Up</ULButton>}
         </div>
       </nav>
     </>

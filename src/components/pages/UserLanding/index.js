@@ -1,6 +1,6 @@
 import React from 'react';
 import CityGrid from './CityGrid';
-import Footer from './Footer';
+import ULFooter from './ULFooter';
 import NavBar from './NavBar';
 import SearchSection from './SearchSection';
 
@@ -10,7 +10,7 @@ const UserLanding = () => {
       <NavBar />
       <SearchSection />
       <CityGrid />
-      <Footer />
+      <ULFooter />
     </>
   );
 };
