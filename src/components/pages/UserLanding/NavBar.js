@@ -22,7 +22,7 @@ const NavBar = () => {
     showButton();
   }, []);
 
-  const logoImg = require('../../../assets/imgs/city-outline.svg');
+  const logoImg = require('../../../assets/imgs/city-outline.svg').default;
 
   return (
     <>

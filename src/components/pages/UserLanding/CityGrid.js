@@ -1,12 +1,12 @@
 import React from 'react';
 import CityCard from './CityCard';
 
-const gridPic1 = require('../../../assets/imgs/grid-pic1.jpg');
-const gridPic2 = require('../../../assets/imgs/grid-pic2.jpg');
-const gridPic3 = require('../../../assets/imgs/grid-pic3.jpg');
-const gridPic4 = require('../../../assets/imgs/grid-pic4.jpg');
-const gridPic5 = require('../../../assets/imgs/grid-pic5.jpg');
-const gridPic6 = require('../../../assets/imgs/grid-pic6.jpg');
+const gridPic1 = require('../../../assets/imgs/grid-pic1.jpg').default;
+const gridPic2 = require('../../../assets/imgs/grid-pic2.jpg').default;
+const gridPic3 = require('../../../assets/imgs/grid-pic3.jpg').default;
+const gridPic4 = require('../../../assets/imgs/grid-pic4.jpg').default;
+const gridPic5 = require('../../../assets/imgs/grid-pic5.jpg').default;
+const gridPic6 = require('../../../assets/imgs/grid-pic6.jpg').default;
 
 const CityGrid = () => {
   return (
