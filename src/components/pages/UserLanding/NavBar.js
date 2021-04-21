@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ULButton } from './ULButton';
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
+import logoImg from '../../../assets/imgs/city-outline.svg';
 
 import './UserLanding.css';
 
@@ -21,8 +22,6 @@ const NavBar = () => {
   useEffect(() => {
     showButton();
   }, []);
-
-  const logoImg = require('../../../assets/imgs/city-outline.svg').default;
 
   return (
     <>
